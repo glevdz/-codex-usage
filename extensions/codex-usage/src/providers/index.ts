@@ -1,9 +1,8 @@
 // Provider registry - exports all providers
-import { codexProvider } from "./codex";
-import { claudeProvider } from "./claude";
+// Currently only Codex is supported while we debug authentication issues
 
-export const providers = [codexProvider, claudeProvider];
+import { codexProvider } from "./codex";
+
+export const providers = [codexProvider];
 
 export * from "./types";
-export { codexProvider, type CodexUsageData } from "./codex";
-export { claudeProvider, type ClaudeUsageData } from "./claude";
